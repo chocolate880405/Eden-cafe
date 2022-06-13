@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:500');
 
 body{
-  height: 2481px;
+  /* height: 2481px; */
   background: linear-gradient(
     to bottom,#392C22,#6F5449,#A56E50,#DAB55B,#F8F1E1);
     -webkit-user-select: none;
@@ -16,9 +16,11 @@ body{
 
   color:#fff;
   display:flex;
+  justify-content: space-between;
+  width: 100vw;
 }
 .nav0{   
-  right:2vw;
+  width: 25%;
   height:4vw;
   color:#fff;
   display:flex;
@@ -37,11 +39,7 @@ body{
   color:#DAB55B;
   font-size:2vw;
 }
-@media(max-width:987px){
-.img7{
-  display:none;
-}
-}
+
 
 .box1{
   opacity:0.8;
@@ -138,7 +136,17 @@ body{
   padding-top:50px;
 }
 
-
+@media(max-width:987px){
+  .img7{
+    display:none;
+  }
+  img{
+    display: none;
+  }
+  .footer{
+    margin-top: 0;
+  }
+  }
 
 
 

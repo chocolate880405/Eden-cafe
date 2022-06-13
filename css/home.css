@@ -226,17 +226,17 @@ body{
 
     color:#fff;
     display:flex;
+    justify-content: space-between;
 }
 
 .nav0{
-    
-    right:2vw;
     height:4vw;
     color:#fff;
     display:flex;
     flex-direction:row;
     justify-content:center;
     align-items:center;
+    width: 25%;
   }
 .nav0 a{
     font-family:'Raleway', Arial, sans-serif,bold;

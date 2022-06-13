@@ -9,12 +9,12 @@ body{
 .nav{
     border-top:1px solid rgba(255, 255, 255, 0.596);
     border-bottom:1px solid rgba(255, 255, 255, 0.596);
-  
+    width: 100vw;
     color:#fff;
     display:flex;
+    justify-content: space-between;
   }
 .nav0{   
-    right:2vw;
     height:4vw;
     color:#fff;
     display:flex;

@@ -2,26 +2,33 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:500');
-
+html{
+  min-width: 375px;
+}
 body {
     margin: 0;
     -webkit-user-select: none;
+    height: 100vh;
+    background-color:#392C22;
+    min-width: 375px;
+    overflow: hidden;
   }
   .nav{
     border-top:1px solid rgba(255, 255, 255, 0.596);
     border-bottom:1px solid rgba(255, 255, 255, 0.596);
-  
+    width: 100vw;
     color:#fff;
     display:flex;
+    justify-content: space-between;
   }
   .nav0{   
-    right:2vw;
     height:4vw;
     color:#fff;
     display:flex;
     flex-direction:row;
     justify-content:center;
     align-items:center;
+    width: 25%;
   }
   .nav0 a{
     font-family:'Raleway', Arial, sans-serif,bold;
@@ -232,27 +239,23 @@ body {
 .container {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   background-color: #FFF8E1;
   overflow: hidden;
+  margin-top: 50px;
+  padding: 20px;
 }
 
 .container .top-line {
   position: absolute;
-  top: 50px;
+  top: 80px;
   right: 50px;
   left: 50px;
   margin: 0;
   border: 3px solid #ffa726;
   border-radius: 5px;
 }
-@media (max-width: 600px) {
-  .container .top-line {
-    top: 20px;
-    right: 20px;
-    left: 20px;
-  }
-}
+
 .container .top-line.hidden {
   border: 3px solid #FFF8E1;
   animation-name: moveRight;
@@ -326,22 +329,6 @@ body {
   font-size:3vw;
   color: #6F5449;
 }
-@media(max-width:762px){
-  .text1 h3{
-    font-size:35px;
-  }
-}
-@media(max-width:1024px){
-  .text1 h3{
-    font-size:40px;
-  }
-}
-@media(max-width:586px){
-  .text1 h3{
-    font-size:20px;
-    left:20px;
-  }
-}
 .text2{
   position: relative;
   width:60%;
@@ -349,7 +336,7 @@ body {
   justify-content: center;
   align-items: center;
  left:10vw;
-  top:90px;
+  top:100px;
 }
 .text2 li{
 font-size:18px;
@@ -365,4 +352,41 @@ font-size:18px;
 }
 .a{
   font-family:"微軟正黑體";
+}
+
+@media(max-width:762px){
+  .text1 h3{
+    font-size:35px;
+  }
+  .text2{
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    left:10vw;
+    top:100px;
+  }
+  .container .top-line {
+    width: 90%;
+    top: 60px;
+    right: 50px;
+    left: 17px;
+  }
+  .container{
+    margin-top: 20px;
+  }
+  .abraca {
+    left: -150px;
+  }
+}
+@media(max-width:1024px){
+  .text1 h3{
+    font-size:40px;
+  }
+}
+@media(max-width:586px){
+  .text1 h3{
+    font-size:20px;
+    left:20px;
+  }
 }
