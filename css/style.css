@@ -1,0 +1,46 @@
+html{
+    background-color: #392C22;
+}
+.container1{
+    position: relative;
+}
+.picture{
+    width: 100vw;
+    height: 100vh;
+    background-color:#392C22;
+}
+.picture img{
+    width: 100%;
+    height:100%;
+}
+.rdoor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 15%;
+    height: 45%;
+    animation: pulse 2s infinite;
+    transition: 2s;
+}
+.rdoor img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 8px 2px #fff;
+    }
+    50% {
+        box-shadow: 0 0 8px 10px #fffd74;
+    }
+    100% {
+        box-shadow: 0 0 8px 2px #fff;
+    }
+}
+
+
+.rdoor:hover{
+    opacity: 0;
+}
